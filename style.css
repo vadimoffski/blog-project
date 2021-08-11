@@ -12,20 +12,87 @@ body{
     padding-right: 15px;
     margin: 0 auto;
 }
-
 .row{
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     margin: 0 -15px;
 }
 [class*="col-"]{
     padding: 0 15px;
 }
-
 .col-xs-12{
     flex: 0 0 100%;
     max-width: 100%;
 }
+.header{
+    background-color: #1d2126;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-link{
+    text-decoration: none;
+    color: #a4aead;
+    padding: 5px;
+    border: 2px solid transparent;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.nav-link:hover{
+    border: 2px solid #a4aead;
+    border-radius: 5px;
+    color: #a4aead;
+}
+.nav-link-home{
+    border: 2px solid #23b7a3;
+    border-radius: 5px;
+    color: #23b7a3;
+}
+.search-design{
+    outline: none;
+    background-color: transparent;
+    border: none;
+    color: #a4aead;
+    width: 135px;
+    height: 25px;
+    padding-left: 5px;
+}
+.search-design::placeholder{
+    color: #a4aead;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.custom-search{
+    position: relative;
+    border: 2px solid #a4aead;
+    border-radius: 5px;
+}
+.search-btn{
+   position: absolute;
+   width: 20px;
+   height: 25px;
+   top: -1px;
+   right: 5px;
+   background-color: transparent;
+   border: none;
+   background-image: url(images/icon-search.png);
+   background-repeat: no-repeat;
+   background-size: 60px;
+   background-position: center;
+   cursor: pointer;
+}
+/* убирам крестик в форме ЗАПОМНИТЬ!!! */
+input[type=search]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal {  display: none; width : 0; height: 0; }
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+
+
 /* tablet */
 @media (min-width: 768px){
     .container{
@@ -46,14 +113,15 @@ body{
     .container{
         max-width: 960px;
     }
-   
-    
 }
 
 /* desktop */
 @media (min-width: 1200px){
     .container{
         max-width: 1170px;
+    }
+    .row{
+        height: 80px;
     }
     .col-md-2{
         flex: 0 0 16.66667%;
@@ -71,5 +139,10 @@ body{
 
 /* only mobile */
 @media (max-width: 767px){
-
+    .row{
+        flex-direction: column;
+    }
+    .col-xs-hidden{
+        display: none;
+    }
 }
