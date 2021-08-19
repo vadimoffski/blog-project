@@ -21,18 +21,6 @@ body{
 [class*="col-"]{
     padding: 0 15px;
 }
-.col-xs-3{
-    flex: 0 0 100%;
-    max-width: 25%;
-}
-.col-xs-5{
-    flex: 0 0 100%;
-    max-width: 41.66667%;
-}
-.col-xs-7{
-    flex: 0 0 100%;
-    max-width: 58.33334%;
-}
 .col-xs-12{
     flex: 0 0 100%;
     max-width: 100%;
@@ -40,18 +28,15 @@ body{
 /* ---------------------------------------------HEADER----------------------- */
 .header{
     background-color: #1d2126;
-}
-.header-flex{
-    align-items: center;
+    text-align: center;
 }
 .nav{
     display: flex;
-    justify-content: space-between;
 }
 .nav-link{
     text-decoration: none;
     color: #a4aead;
-    padding: 5px;
+    padding: 2px;
     border: 2px solid transparent;
     text-transform: uppercase;
     font-weight: 600;
@@ -95,7 +80,6 @@ body{
    border: none;
    background-image: url(images/icon-search.png);
    background-repeat: no-repeat;
-   background-size: 60px;
    background-position: center;
    cursor: pointer;
 }
@@ -118,34 +102,29 @@ h2{
     background-image: url(images/carousel.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 400px;
 }
-.carousel{
-    display: flex;
-    align-items: center;
-    height: 400px;
+.carousel-item{
+    margin: 30px;
 }
-
+.carousel-item>h2{
+    margin-bottom: 20px;
+}
+.carousel-item>p{
+    line-height: 25px;
+}
 .carousel-item{
     color:white;
 }
-.carousel-item>h2{
-    margin-bottom: 30px;
-}
-.carousel-item>p{
-    
-    margin-bottom: 30px;
-}
+
 /* ------------------------------WE ARE MODEST------------------------- */
 .block2{
-    height: 450px;
     border-bottom: 1px solid #a4aead;
 }
 .title{
     position: relative;
     margin-top: 30px;
     margin-bottom: 30px;
-    padding-left: 20px;
+    padding-left: 30px;
 }
 .title::before{
     content: "";
@@ -183,9 +162,7 @@ h2{
 .modest-links-item:hover{
     background-color: #23b7a3;
 }
-.modest-flex{
-    flex-direction: column;
-}
+
 .modest-column2 li{
     margin-bottom: 30px;
     position: relative;
@@ -215,15 +192,14 @@ h2{
     margin-bottom: 30px;
 }
 /* -----------------------------------------team------------------------- */
-.block3{
-    
-    border-bottom: #e1e6ea;
+.team-item{
+    margin-bottom: 20px;
 }
-
 .team-item-data{
     margin-top: -2px;
     background-color: #e1e6ea;
     height: 75px;
+    width: 262px;
     padding: 20px;
 }
 .team-name{
@@ -240,9 +216,6 @@ h2{
 
 
 
-
-
-
 /* tablet */
 @media (min-width: 768px){
     .container{
@@ -252,26 +225,33 @@ h2{
         flex: 0 0 16.66667%;
         max-width: 16.66667%;
     }
+    .col-sm-6{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
     .col-sm-8{
         flex: 0 0 66.66667%;
         max-width: 66.66667%;
     }
+    .col-sm-12{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .row{
+        align-items: center;
+    }
+    .search-design{
+        width: 65px;
+        margin-left: -20px;
+    }
+    
+
 }
 
 /* laptop */
 @media (min-width: 992px){
     .container{
         max-width: 960px;
-    }
-}
-
-/* desktop */
-@media (min-width: 1200px){
-    .container{
-        max-width: 1170px;
-    }
-    .row{
-        height: 80px;
     }
     .col-md-2{
         flex: 0 0 16.66667%;
@@ -281,18 +261,30 @@ h2{
         flex: 0 0 25%;
         max-width: 25%;
     }
-    .col-md-7{
-        flex: 0 0 58.33333%;
-        max-width: 58.33333%;
+    .col-md-5{
+        flex: 0 0 41%;
+        max-width: 41%;
     }
+    .col-md-7{
+        flex: 0 0 58%;
+        max-width: 58%;
+    }
+}
+
+/* desktop */
+@media (min-width: 1200px){
+    .container{
+        max-width: 1170px;
+    }
+
 }
 
 /* only mobile */
 @media (max-width: 767px){
     .row{
         flex-direction: column;
+        align-items: center;
     }
-    
     .col-xs-hidden{
         display: none;
     }
@@ -301,4 +293,18 @@ h2{
         height: 40px;
         align-items: center;
     }
+    .carousel-item{
+        margin: 30px;
+        text-align: center;
+    }
+    .carousel-item>h2{
+        margin-bottom: 20px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    
+
+
+    
 }
