@@ -6,6 +6,9 @@
 body{
     font-family: 'Open Sans', sans-serif;
 }
+.img-item{
+    width: 100%;
+}
 /* _____________________________________________________ */
 .container{
     width: 100%;
@@ -236,9 +239,6 @@ h2{
 .block3{
     border-bottom: 1px solid #a4aead;
 }
-.team-item-photo img{
-    width: 100%;
-}
 .team-item{
     padding-bottom: 20px;
     position: relative;
@@ -301,22 +301,46 @@ h2{
 .block4{
     background-color: #3a454d;
 }
-.img-item{
-    margin-bottom: 30px;
-    max-width: 100%;
+.white{
+    color: white;
 }
-.img-link{
-    display: block;
+.work-wrapper{
+    margin-bottom: 30px;
+}
+.work-item{
     position: relative;
 }
-.img-text{
+.work-item:hover .work-overlay-dark{
     position: absolute;
-    bottom: 33px;
-    left:0;
-    width: 262px;
-    height: 45px;
-    background-color: rgb(41, 47, 54);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(41, 47, 54, 0.5);
+    background-image: url(images/icon-cross.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.work-name{
     display: none;
+    padding: 20px;
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #292f36;
+
+}
+.work-name p{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Quattrocento Sans', sans-serif;
+    text-transform: uppercase;
+}
+.work-item:hover .work-name{
+    display: block;
 }
 .btn{
     text-align: center;
@@ -337,9 +361,7 @@ h2{
     border: 2px solid #23b7a3;
     color: #23b7a3;
 }
-.white{
-    color: white;
-}
+
 
 /* -----------------------------what we doo------------------------------------------- */
 .block5{
@@ -371,9 +393,21 @@ h2{
 /* ----------------------------------------------------features------------------------- */
 .block6{
     background-color: #3a454d;
+    color: white;
 }
-.black{
-    color: black;
+.features-wrapper{
+    margin-bottom: 50px;
+}
+.features-name{
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.features-description{
+    line-height: 30px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 
