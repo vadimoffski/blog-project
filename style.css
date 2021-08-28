@@ -28,7 +28,8 @@ body{
 /* ---------------------------------------------HEADER----------------------- */
 .header{
     background-color: #1d2126;
-    text-align: center;
+    padding: 20px 0;
+    
 }
 .nav{
     display: flex;
@@ -57,9 +58,8 @@ body{
     background-color: transparent;
     border: none;
     color: #a4aead;
-    width: 135px;
+    width: 63px;
     height: 25px;
-    padding-left: 5px;
 }
 .search-design::placeholder{
     color: #a4aead;
@@ -102,11 +102,11 @@ h2{
 .block1{
     background-image: url(images/carousel.png);
     background-repeat: no-repeat;
+    background-size: 100% 100%;
     background-position: center;
-    background-size: cover;
-}
-.carousel{
-    padding: 30px;
+    height: 660px;
+    display: flex;
+    align-items: center;
 }
 .carousel-item>h2{
     margin-bottom: 20px;
@@ -116,7 +116,42 @@ h2{
 }
 .carousel-item{
     color:white;
+    margin-bottom: 45px;
 }
+.carousel-btn{
+    width: 120px;
+    height: 45px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+.carousel-btn:hover{
+    background: #23b7a3;
+    border: 2px solid #23b7a3;
+}
+.carousel{
+    position: relative;
+}
+.carousel-indicators{
+    position: absolute;
+    bottom: -130px;
+}
+.carousel-indicators-btn{
+    width: 10px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background: transparent;
+}
+.carousel-indicators-btn:nth-child(2){
+    background: white;
+}
+
 
 /* ------------------------------WE ARE MODEST------------------------- */
 [class*="block"]{
@@ -201,14 +236,17 @@ h2{
 .block3{
     border-bottom: 1px solid #a4aead;
 }
+.team-item-photo img{
+    width: 100%;
+}
 .team-item{
     padding-bottom: 20px;
+    position: relative;
 }
 .team-item-data{
     margin-top: -2px;
     background-color: #e1e6ea;
     height: 75px;
-    width: 262px;
     padding: 20px;
 }
 .team-name{
@@ -220,6 +258,44 @@ h2{
     font-size: 14px;
     color: #8d8f92;
 }
+.team-icons{
+    display:none;
+    position: absolute;
+    z-index: 1;
+    top: 120px;
+    left: 50px;
+}
+.team-icon{
+    margin: 0px 1px;
+    height: 50px;
+    width: 50px;
+}
+.icon-twiter{
+    background: url(images/icon-twiter.png) no-repeat 50% 50%;
+    background-color: #3a454d;
+}
+.icon-facebook{
+    background: url(images/icon-facebook.png) no-repeat 50% 50%;
+    background-color: #3a454d;
+}
+.icon-in{
+    background: url(images/icon-in.png) no-repeat 50% 50%;
+    background-color: #3a454d;
+}
+.team-item:hover .overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.301);
+}
+.team-item:hover .team-icons{
+    display: flex;
+}
+.team-item:hover .team-item-data{
+    background-color: #3a454d;
+}
 
 /* ---------------------------------------Lovely-work------------------------------ */
 .block4{
@@ -227,9 +303,7 @@ h2{
 }
 .img-item{
     margin-bottom: 30px;
-}
-.img-item[img]:hover{
-    background-color: tomato;
+    max-width: 100%;
 }
 .img-link{
     display: block;
@@ -310,8 +384,9 @@ h2{
     .container{
         max-width: 720px;
     }
-    .header{
-        padding: 10px 0;
+    .col-sm-1{
+        flex: 0 0 8,33333%;
+        max-width: 8,33333%;
     }
     .col-sm-2{
         flex: 0 0 16.66667%;
@@ -348,19 +423,21 @@ h2{
     .row{
         align-items: center;
     }
-    .search-design{
-        width: 65px;
-        margin-left: -20px;
-    }
-    .img-item{
-        max-width: 330px;
-    }
     .btn{
         margin-top: 10px;
     }
     .nav-link{
         padding: 2px 0;
     }
+    .carousel-indicators{
+        bottom: -175px;
+        right: 45px;
+    }
+    .team-icons{
+        top: 163px;
+        left: 87px;
+    }
+    
     
 
 }
@@ -369,6 +446,10 @@ h2{
 @media (min-width: 992px){
     .container{
         max-width: 960px;
+    }
+    .col-md-1{
+        flex: 0 0 8,33333%;
+        max-width: 8,33333%;
     }
     .col-md-2{
         flex: 0 0 16.66667%;
@@ -391,17 +472,18 @@ h2{
         max-width: 58%;
     }
     .search-design{
-        width: 104px;
+        width: 100px;
         padding-left: 10px;
-    }
-    .img-item{
-        max-width: 300px;
     }
     .btn{
         margin-top: 30px;
     }
     .nav-link{
         padding: 5px;
+    }
+    .team-icons{
+        top: 95px;
+        left: 27px;
     }
 
 }
@@ -411,11 +493,12 @@ h2{
     .container{
         max-width: 1170px;
     }
-    .header{
-        padding: 10px 0;
+    .search-design{
+        width: 135px;
     }
-    .img-item{
-        max-width: 350px;
+    .team-icons{
+        top: 120px;
+        left: 50px;
     }
 
 }
@@ -440,14 +523,11 @@ h2{
     h2{
         font-size: 30px;
     }
-    .img-item{
-        max-width: 262px;
-    }
     .btn{
         margin-top: 10px;
     }
-    
-
-
-    
+    .block1{
+        text-align: center;
+        background-size: cover;
+    }
 }
