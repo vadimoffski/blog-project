@@ -465,7 +465,6 @@ h2{
     position: relative;
     width: 555px;
     height: 400px;
-    margin: 55px 675px;
     border: 1px solid grey;
     background-color: white;
     padding: 30px;
@@ -592,7 +591,9 @@ h2{
         top: 163px;
         left: 87px;
     }
-    
+    .modal-block{
+        margin: 20px auto;
+    }
     
 
 }
@@ -655,6 +656,9 @@ h2{
         top: 120px;
         left: 50px;
     }
+    .modal-block{
+        margin: 55px 675px;
+    }
 
 }
 
@@ -688,5 +692,13 @@ h2{
     
     .contact-title, .contact-btn-center, .contact-info, .copyright{
         text-align: center;
+    }
+    .modal-block{
+        margin: 20px auto;
+        width: 100%;
+    }
+    .form-field input{
+        width: 95%;
+        padding: 2px 5px;
     }
 }
