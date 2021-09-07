@@ -5,6 +5,7 @@
 }
 body{
     font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
 }
 .img-item{
     width: 100%;
@@ -102,60 +103,25 @@ h2{
     font-size: 36px;
 }
 /* ------------------------------------------CAROUSEL----------------------------------- */
-.block1{
-    background-image: url(images/carousel.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center;
+.slider{
+    overflow-x: hidden;
+}
+.slick-slide img{
+    width: 100%;
     height: 660px;
-    display: flex;
-    align-items: center;
+    object-fit: cover;
 }
-.carousel-item>h2{
-    margin-bottom: 20px;
-}
-.carousel-item>p{
-    line-height: 25px;
-}
-.carousel-item{
-    color:white;
-    margin-bottom: 45px;
-}
-.carousel-btn{
-    width: 120px;
-    height: 45px;
-    background: transparent;
-    border: 2px solid white;
-    border-radius: 10px;
-    color: white;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-family: 'Quattrocento Sans', sans-serif;
-}
-.carousel-btn:hover{
-    background: #23b7a3;
-    border: 2px solid #23b7a3;
-}
-.carousel{
-    position: relative;
-}
-.carousel-indicators{
+.slick-dots {
     position: absolute;
-    bottom: -130px;
+    bottom: 15px !important;
 }
-.carousel-indicators-btn{
-    width: 10px;
-    height: 15px;
-    border-radius: 50%;
-    border: 2px solid white;
-    background: transparent;
+.slick-dots li.slick-active button:before {
+    color: white !important;
 }
-.carousel-indicators-btn:nth-child(2){
-    background: white;
+.slick-dots li button:before {
+    font-size: 15px !important;
+    color: white !important;
 }
-
-
 /* ------------------------------WE ARE MODEST------------------------- */
 [class*="block"]{
     padding-top: 80px;
@@ -583,10 +549,6 @@ h2{
     .nav-link{
         padding: 2px 0;
     }
-    .carousel-indicators{
-        bottom: -175px;
-        right: 45px;
-    }
     .team-icons{
         top: 163px;
         left: 87px;
@@ -594,8 +556,11 @@ h2{
     .modal-block{
         margin: 20px auto;
     }
-    
-
+    .slick-dots {
+        position: absolute;
+        bottom: 15px !important;
+        right: -300px;
+    }
 }
 
 /* laptop */
@@ -641,7 +606,11 @@ h2{
         top: 95px;
         left: 27px;
     }
-
+    .slick-dots {
+        position: absolute;
+        bottom: 15px !important;
+        right: -400px;
+    }
 }
 
 /* desktop */
@@ -659,7 +628,12 @@ h2{
     .modal-block{
         margin: 55px 675px;
     }
-
+    .slick-dots {
+        position: absolute;
+        bottom: 15px !important;
+        right: -500px;
+    }
+    
 }
 
 /* only mobile */
@@ -689,7 +663,6 @@ h2{
         text-align: center;
         background-size: cover;
     }
-    
     .contact-title, .contact-btn-center, .contact-info, .copyright{
         text-align: center;
     }
@@ -701,4 +674,5 @@ h2{
         width: 95%;
         padding: 2px 5px;
     }
+   
 }
