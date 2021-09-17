@@ -1,452 +1,565 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-</head>
-<body>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  </head>
+  <body>
     <header class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-2 col-md-3">
-                    <a href="#"><img src="images/logo.jpg" alt="logo"></a>
-                </div>
-                <div class="col-xs-12 col-sm-8 col-md-7">
-                    <ul class="nav">
-                        <li class="nav-item"><a href="#" class="nav-link nav-link-home">Home</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Work</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Team</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-xs-hidden col-sm-2 col-md-2">
-                    <form action="#">
-                        <div class="custom-search">
-                            <input type="text" class="search-design" placeholder="search">
-                            <input type="button" class="search-btn">
-                        </div>
-                    </form>
-                </div>
+      <div class="container">
+        <div class="row mobile-row">
+          <div class="col-xs-8 col-sm-2 col-md-3">
+            <a href="#"><img src="images/logo.jpg" alt="logo" /></a>
+          </div>
+          <div class="col-xs-4 col-sm-8 col-md-7">
+            <ul class="nav navigation">
+              <li class="nav-item">
+                <a href="#" class="nav-link nav-link-home">Home</a>
+              </li>
+              <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Work</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Team</a></li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Services</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Features</a>
+              </li>
+              <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-mobile-menu">
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
+          </div>
+          <div class="col-xs-hidden col-sm-2 col-md-2">
+            <form action="#">
+              <div class="custom-search">
+                <input type="text" class="search-design" placeholder="search" />
+                <input type="button" class="search-btn" />
+              </div>
+            </form>
+          </div>
         </div>
+      </div>
     </header>
     <main>
-        <section class="">
-            <div class="slider">
-                <div><img src="./images/carousel.png" alt=""></div>
-                <div><img src="./images/slider-1.jpg" alt=""></div>
-                <div><img src="./images/slider-2.jpg" alt=""></div>
-                <div><img src="./images/slider-3.jpg" alt=""></div>
+      <section class="">
+        <div class="slider">
+          <div>
+            <img src="./images/carousel.png" alt="" />
+            <div class="slider-inner col-xs-12 col-sm-8 col-md-6">
+              <h2 class="slider-inner__title">welcome to our marketplace</h2>
+              <div class="slider-inner__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                nisi metus, tristique ndolor non, ornare sagittis dolor. Nulla
+                vestibulu lacus ...
+              </div>
+              <div class="slider-inner__buttons">
+                <button class="slider-inner__button">view more</button>
+                <button class="slider-inner__button">video tour</button>
+              </div>
             </div>
-        </section>
-        <section class="block2">
-            <div class="container">
-                <div class="row ">
-                    <div class="col-xs-12 col-sm-12 col-md-12">
-                        <h2 class="title">We are modest.</h2>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-7">
-                        <div class="modest-description">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum sapiente nulla
-                                accusamus veritatis aspernatur, dicta quae ipsum harum minus doloribus ea, atque, cum
-                                possimus minima earum soluta id fugiat illo.</p>
-                            <p>Lorem ipsum dolor, <span class="bold"> sit amet consectetur adipisicing elit.</span> Iure
-                                quae distinctio atque corporis. Repudiandae, voluptates impedit illo totam maxime iure
-                                porro adipisci ducimus maiores delectus incidunt dolor fuga! Assumenda, maiores.</p>
-                        </div>
-                        <div class="modest-links">
-                            <div class="modest-links-item">
-                                <a href=""><img src="images/facebook.png" alt="facebook"></a>
-                            </div>
-                            <div class="modest-links-item">
-                                <a href=""><img src="images/twitter.png" alt="twitter"></a>
-                            </div>
-                            <div class="modest-links-item">
-                                <a href=""><img src="images/google.png" alt="google"></a>
-                            </div>
-                            <div class="modest-links-item">
-                                <a href=""><img src="images/unknown.png" alt="unknown"></a>
-                            </div>
-                            <div class="modest-links-item">
-                                <a href=""><img src="images/behanse.png" alt="behanse"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-5">
-                        <ul class="modest-column2">
-                            <li>
-                                <div class="modest-num">01</div>
-                                <h3 class="bold">Dedication the customers</h3>
-                                <p>Integer vel lacus non dui ullamcorper venenatis. Aliquam vitae tristique nisi, vitae
-                                    ullamcorper risus</p>
-                            </li>
-                            <li>
-                                <div class="modest-num">02</div>
-                                <h3>Working closely with our clients</h3>
-                                <p>Sed blandit nisi urna, sed pellentesque enim consectetur vitae. Suspendisse ut
-                                    vehicula nibh.</p>
-                            </li>
-                            <li>
-                                <div class="modest-num">03</div>
-                                <h3>Increase happiness</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend laoreet
-                                    euismod.</p>
-                            </li>
-                        </ul>
-                    </div>
+          </div>
+          <div><img src="./images/slider-1.jpg" alt="" /></div>
+          <div><img src="./images/slider-2.jpg" alt="" /></div>
+          <div><img src="./images/slider-3.jpg" alt="" /></div>
+        </div>
+      </section>
+      <section class="block2">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+              <h2 class="title">We are modest.</h2>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-7">
+              <div class="modest-description">
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Dolorum sapiente nulla accusamus veritatis aspernatur, dicta
+                  quae ipsum harum minus doloribus ea, atque, cum possimus
+                  minima earum soluta id fugiat illo.
+                </p>
+                <p>
+                  Lorem ipsum dolor,
+                  <span class="bold">
+                    sit amet consectetur adipisicing elit.</span
+                  >
+                  Iure quae distinctio atque corporis. Repudiandae, voluptates
+                  impedit illo totam maxime iure porro adipisci ducimus maiores
+                  delectus incidunt dolor fuga! Assumenda, maiores.
+                </p>
+              </div>
+              <div class="modest-links">
+                <div class="modest-links-item">
+                  <a href=""
+                    ><img src="images/facebook.png" alt="facebook"
+                  /></a>
                 </div>
-            </div>
-        </section>
-        <section class="block3">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12">
-                        <h2 class="title">meet the team.</h2>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-3">
-                        <div class="team-item">
-                            <div>
-                                <img src="images/photo1.png" alt="photo1" class="img-item">
-                                <div class="overlay"></div>
-                            </div>
-                            <div class="team-icons">
-                                <a href="" class="team-icon icon-twiter"></a>
-                                <a href="" class="team-icon icon-facebook"></a>
-                                <a href="" class="team-icon icon-in"></a>
-                            </div>
-                            <div class="team-item-data">
-                                <p class="team-name">Gloria Bromley</p>
-                                <p class="team-description">CEO and Founder</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-3">
-                        <div class="team-item">
-                            <div>
-                                <img src="images/photo2.png" alt="photo1" class="img-item">
-                                <div class="overlay"></div>
-                            </div>
-                            <div class="team-icons">
-                                <a href="" class="team-icon icon-twiter"></a>
-                                <a href="" class="team-icon icon-facebook"></a>
-                                <a href="" class="team-icon icon-in"></a>
-                            </div>
-                            <div class="team-item-data">
-                                <p class="team-name">Paul Torres</p>
-                                <p class="team-description">Head of Development</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-3">
-                        <div class="team-item">
-                            <div>
-                                <img src="images/photo3.png" alt="photo1" class="img-item">
-                                <div class="overlay"></div>
-                            </div>
-                            <div class="team-icons">
-                                <a href="" class="team-icon icon-twiter"></a>
-                                <a href="" class="team-icon icon-facebook"></a>
-                                <a href="" class="team-icon icon-in"></a>
-                            </div>
-                            <div class="team-item-data">
-                                <p class="team-name">Judith Gillette</p>
-                                <p class="team-description">Graphic Desinger</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-3">
-                        <div class="team-item">
-                            <div>
-                                <img src="images/photo4.png" alt="photo1" class="img-item">
-                                <div class="overlay"></div>
-                            </div>
-                            <div class="team-icons">
-                                <a href="" class="team-icon icon-twiter"></a>
-                                <a href="" class="team-icon icon-facebook"></a>
-                                <a href="" class="team-icon icon-in"></a>
-                            </div>
-                            <div class="team-item-data">
-                                <p class="team-name">Delores Reed</p>
-                                <p class="team-description">Client Service Director</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="modest-links-item">
+                  <a href=""><img src="images/twitter.png" alt="twitter" /></a>
                 </div>
-            </div>
-        </section>
-        <section class="block4">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12">
-                        <h2 class="title white">Lovely work.</h2>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <div class="work-wrapper">
-                            <div class="work-item">
-                                <img src="images/img1.png" alt="" class="img-item">
-                                <div class="work-overlay-dark"></div>
-                                <div class="work-name">
-                                    <p>partnership guidlines</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <div class="work-wrapper">
-                            <div class="work-item">
-                                <img src="images/img2.png" alt="" class="img-item">
-                                <div class="work-overlay-dark"></div>
-                                <div class="work-name">
-                                    <p>partnership guidlines</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <div class="work-wrapper">
-                            <div class="work-item">
-                                <img src="images/img3.png" alt="" class="img-item">
-                                <div class="work-overlay-dark"></div>
-                                <div class="work-name">
-                                    <p>partnership guidlines</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <div class="work-wrapper">
-                            <div class="work-item">
-                                <img src="images/img4.png" alt="" class="img-item">
-                                <div class="work-overlay-dark"></div>
-                                <div class="work-name">
-                                    <p>partnership guidlines</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <div class="work-wrapper">
-                            <div class="work-item">
-                                <img src="images/img5.png" alt="" class="img-item">
-                                <div class="work-overlay-dark"></div>
-                                <div class="work-name">
-                                    <p>partnership guidlines</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <div class="work-wrapper">
-                            <div class="work-item">
-                                <img src="images/img6.png" alt="" class="img-item">
-                                <div class="work-overlay-dark"></div>
-                                <div class="work-name">
-                                    <p>partnership guidlines</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 btn">
-                        <button class="btn-show-more">Show me more</button>
-                    </div>
+                <div class="modest-links-item">
+                  <a href=""><img src="images/google.png" alt="google" /></a>
                 </div>
-            </div>
-        </section>
-        <section class="block5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12">
-                        <h2 class="title title-bottom">What we do.</h2>
-                    </div>
-                    <div class="specific-item col-xs-12 col-sm-3 col-md-3">
-                        <div><a href=""><img src="images/spec1.png" alt="" class="specific-img"></a></div>
-                        <div class="specific-name">Easy theme Setup</div>
-                        <div class="specific-description">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo.
-                            Maecenas a justo nec velit egestas fermentum.</div>
-                    </div>
-                    <div class="specific-item col-xs-12 col-sm-3 col-md-3">
-                        <div><a href=""><img src="images/spec2.png" alt="" class="specific-img"></a></div>
-                        <div class="specific-name">pixel perfect design</div>
-                        <div class="specific-description">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo.
-                            Maecenas a justo nec velit egestas fermentum.</div>
-                    </div>
-                    <div class="specific-item col-xs-12 col-sm-3 col-md-3">
-                        <div><a href=""><img src="images/spec3.png" alt="" class="specific-img"></a></div>
-                        <div class="specific-name">responsive display</div>
-                        <div class="specific-description">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo.
-                            Maecenas a justo nec velit egestas fermentum.</div>
-                    </div>
-                    <div class="specific-item col-xs-12 col-sm-3 col-md-3">
-                        <div><a href=""><img src="images/spec4.png" alt="" class="specific-img"></a></div>
-                        <div class="specific-name">24/7 support</div>
-                        <div class="specific-description">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo.
-                            Maecenas a justo nec velit egestas fermentum.</div>
-                    </div>
-                    <div class="specific-item col-xs-12 col-sm-3 col-md-3">
-                        <div><a href=""><img src="images/spec1.png" alt="" class="specific-img"></a></div>
-                        <div class="specific-name">Easy theme Setup</div>
-                        <div class="specific-description">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo.
-                            Maecenas a justo nec velit egestas fermentum.</div>
-                    </div>
-                    <div class="specific-item col-xs-12 col-sm-3 col-md-3">
-                        <div><a href=""><img src="images/spec2.png" alt="" class="specific-img"></a></div>
-                        <div class="specific-name">pixel perfect design</div>
-                        <div class="specific-description">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo.
-                            Maecenas a justo nec velit egestas fermentum.</div>
-                    </div>
-                    <div class="specific-item col-xs-12 col-sm-3 col-md-3">
-                        <div><a href=""><img src="images/spec3.png" alt="" class="specific-img"></a></div>
-                        <div class="specific-name">responsive display</div>
-                        <div class="specific-description">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo.
-                            Maecenas a justo nec velit egestas fermentum.</div>
-                    </div>
-                    <div class="specific-item col-xs-12 col-sm-3 col-md-3">
-                        <div><a href=""><img src="images/spec4.png" alt="" class="specific-img"></a></div>
-                        <div class="specific-name">24/7 support</div>
-                        <div class="specific-description">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo.
-                            Maecenas a justo nec velit egestas fermentum.</div>
-                    </div>
+                <div class="modest-links-item">
+                  <a href=""><img src="images/unknown.png" alt="unknown" /></a>
                 </div>
-            </div>
-        </section>
-        <section class="block6">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12">
-                        <h2 class="title white">features.</h2>
-                    </div>
-                    <div class="col-xs-12 col-sm-4 col-md-4">
-                        <div class="features-wrapper">
-                            <a href="#"><img src="images/img7.png" alt="" class="img-item"></a>
-                            <p class="features-name">Product Design: Eames Chairs</p>
-                            <p class="features-description">Eames designs are certainly iconic. Everyone of us know at
-                                least two or three of their famous chairs. I would even risk saying that most of us
-                                dream about having a nice Eames.</p>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4 col-md-4">
-                        <div class="features-wrapper">
-                            <a href="#"><img src="images/img8.png" alt="" class="img-item"></a>
-                            <p class="features-name">Elegant and Colorful Logos</p>
-                            <p class="features-description">I’ve always found logo design to be one of the most
-                                challenging things to get right. There’s so much that a logo can say about a brand
-                                without actually saying it.</p>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4 col-md-4">
-                        <div class="features-wrapper">
-                            <a href="#"><img src="images/img9.png" alt="" class="img-item"></a>
-                            <p class="features-name">A Showcase of Creative</p>
-                            <p class="features-description">It’s always interesting to see another designer’s take on a
-                                famous website, app or even physical product. Different designers add their own
-                                personality and style.</p>
-                        </div>
-                    </div>
+                <div class="modest-links-item">
+                  <a href=""><img src="images/behanse.png" alt="behanse" /></a>
                 </div>
+              </div>
             </div>
-        </section>
-        <section class="block7">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12">
-                        <h2 class="title">Stay in touch.</h2>
-                    </div>
+            <div class="col-xs-12 col-sm-6 col-md-5">
+              <ul class="modest-column2">
+                <li>
+                  <div class="modest-num">01</div>
+                  <h3 class="bold">Dedication the customers</h3>
+                  <p>
+                    Integer vel lacus non dui ullamcorper venenatis. Aliquam
+                    vitae tristique nisi, vitae ullamcorper risus
+                  </p>
+                </li>
+                <li>
+                  <div class="modest-num">02</div>
+                  <h3>Working closely with our clients</h3>
+                  <p>
+                    Sed blandit nisi urna, sed pellentesque enim consectetur
+                    vitae. Suspendisse ut vehicula nibh.
+                  </p>
+                </li>
+                <li>
+                  <div class="modest-num">03</div>
+                  <h3>Increase happiness</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nulla eleifend laoreet euismod.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="block3">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+              <h2 class="title">meet the team.</h2>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="team-item">
+                <div>
+                  <img src="images/photo1.png" alt="photo1" class="img-item" />
+                  <div class="overlay"></div>
                 </div>
-
-            </div>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.0762048401753!2d24.031113215128677!3d49.841025638969676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add6c441906d9%3A0x7e12bdf12456b1d2!2z0JzQsNC30L7RhS1jYWZl!5e0!3m2!1sru!2sua!4v1630256650747!5m2!1sru!2sua"
-                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-6">
-                        <div>
-                            <p class="contact-title">contact information</p>
-                            <p class="contact-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi
-                                metus, tristique nec dolor non, ornare sagittis dolor. Nulla vestibulum lacus sed
-                                molestie gravida. </p>
-                            <p class="contact-info">Cras fermentum elit quis magna congue, vel sodales arcu vestibulum.
-                                Nunc lobortis dui magna, quis dapibus lacus</p>
-                        </div>
-                        <div class="contact-btn-center">
-                            <button class="contact-btn">send massage</button>
-                        </div>
-                    </div>
+                <div class="team-icons">
+                  <a href="" class="team-icon icon-twiter"></a>
+                  <a href="" class="team-icon icon-facebook"></a>
+                  <a href="" class="team-icon icon-in"></a>
                 </div>
+                <div class="team-item-data">
+                  <p class="team-name">Gloria Bromley</p>
+                  <p class="team-description">CEO and Founder</p>
+                </div>
+              </div>
             </div>
-        </section>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="team-item">
+                <div>
+                  <img src="images/photo2.png" alt="photo1" class="img-item" />
+                  <div class="overlay"></div>
+                </div>
+                <div class="team-icons">
+                  <a href="" class="team-icon icon-twiter"></a>
+                  <a href="" class="team-icon icon-facebook"></a>
+                  <a href="" class="team-icon icon-in"></a>
+                </div>
+                <div class="team-item-data">
+                  <p class="team-name">Paul Torres</p>
+                  <p class="team-description">Head of Development</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="team-item">
+                <div>
+                  <img src="images/photo3.png" alt="photo1" class="img-item" />
+                  <div class="overlay"></div>
+                </div>
+                <div class="team-icons">
+                  <a href="" class="team-icon icon-twiter"></a>
+                  <a href="" class="team-icon icon-facebook"></a>
+                  <a href="" class="team-icon icon-in"></a>
+                </div>
+                <div class="team-item-data">
+                  <p class="team-name">Judith Gillette</p>
+                  <p class="team-description">Graphic Desinger</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="team-item">
+                <div>
+                  <img src="images/photo4.png" alt="photo1" class="img-item" />
+                  <div class="overlay"></div>
+                </div>
+                <div class="team-icons">
+                  <a href="" class="team-icon icon-twiter"></a>
+                  <a href="" class="team-icon icon-facebook"></a>
+                  <a href="" class="team-icon icon-in"></a>
+                </div>
+                <div class="team-item-data">
+                  <p class="team-name">Delores Reed</p>
+                  <p class="team-description">Client Service Director</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="block4">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+              <h2 class="title white">Lovely work.</h2>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="work-wrapper">
+                <div class="work-item">
+                  <img src="images/img1.png" alt="" class="img-item" />
+                  <div class="work-overlay-dark"></div>
+                  <div class="work-name">
+                    <p>partnership guidlines</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="work-wrapper">
+                <div class="work-item">
+                  <img src="images/img2.png" alt="" class="img-item" />
+                  <div class="work-overlay-dark"></div>
+                  <div class="work-name">
+                    <p>partnership guidlines</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="work-wrapper">
+                <div class="work-item">
+                  <img src="images/img3.png" alt="" class="img-item" />
+                  <div class="work-overlay-dark"></div>
+                  <div class="work-name">
+                    <p>partnership guidlines</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="work-wrapper">
+                <div class="work-item">
+                  <img src="images/img4.png" alt="" class="img-item" />
+                  <div class="work-overlay-dark"></div>
+                  <div class="work-name">
+                    <p>partnership guidlines</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="work-wrapper">
+                <div class="work-item">
+                  <img src="images/img5.png" alt="" class="img-item" />
+                  <div class="work-overlay-dark"></div>
+                  <div class="work-name">
+                    <p>partnership guidlines</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="work-wrapper">
+                <div class="work-item">
+                  <img src="images/img6.png" alt="" class="img-item" />
+                  <div class="work-overlay-dark"></div>
+                  <div class="work-name">
+                    <p>partnership guidlines</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 btn">
+              <button class="btn-show-more">Show me more</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="block5">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+              <h2 class="title title-bottom">What we do.</h2>
+            </div>
+            <div class="specific-item col-xs-12 col-sm-3 col-md-3">
+              <div>
+                <a href=""
+                  ><img src="images/spec1.png" alt="" class="specific-img"
+                /></a>
+              </div>
+              <div class="specific-name">Easy theme Setup</div>
+              <div class="specific-description">
+                Nunc mattis lorem in leo lobortis, ut venenatis justo commodo.
+                Maecenas a justo nec velit egestas fermentum.
+              </div>
+            </div>
+            <div class="specific-item col-xs-12 col-sm-3 col-md-3">
+              <div>
+                <a href=""
+                  ><img src="images/spec2.png" alt="" class="specific-img"
+                /></a>
+              </div>
+              <div class="specific-name">pixel perfect design</div>
+              <div class="specific-description">
+                Nunc mattis lorem in leo lobortis, ut venenatis justo commodo.
+                Maecenas a justo nec velit egestas fermentum.
+              </div>
+            </div>
+            <div class="specific-item col-xs-12 col-sm-3 col-md-3">
+              <div>
+                <a href=""
+                  ><img src="images/spec3.png" alt="" class="specific-img"
+                /></a>
+              </div>
+              <div class="specific-name">responsive display</div>
+              <div class="specific-description">
+                Nunc mattis lorem in leo lobortis, ut venenatis justo commodo.
+                Maecenas a justo nec velit egestas fermentum.
+              </div>
+            </div>
+            <div class="specific-item col-xs-12 col-sm-3 col-md-3">
+              <div>
+                <a href=""
+                  ><img src="images/spec4.png" alt="" class="specific-img"
+                /></a>
+              </div>
+              <div class="specific-name">24/7 support</div>
+              <div class="specific-description">
+                Nunc mattis lorem in leo lobortis, ut venenatis justo commodo.
+                Maecenas a justo nec velit egestas fermentum.
+              </div>
+            </div>
+            <div class="specific-item col-xs-12 col-sm-3 col-md-3">
+              <div>
+                <a href=""
+                  ><img src="images/spec1.png" alt="" class="specific-img"
+                /></a>
+              </div>
+              <div class="specific-name">Easy theme Setup</div>
+              <div class="specific-description">
+                Nunc mattis lorem in leo lobortis, ut venenatis justo commodo.
+                Maecenas a justo nec velit egestas fermentum.
+              </div>
+            </div>
+            <div class="specific-item col-xs-12 col-sm-3 col-md-3">
+              <div>
+                <a href=""
+                  ><img src="images/spec2.png" alt="" class="specific-img"
+                /></a>
+              </div>
+              <div class="specific-name">pixel perfect design</div>
+              <div class="specific-description">
+                Nunc mattis lorem in leo lobortis, ut venenatis justo commodo.
+                Maecenas a justo nec velit egestas fermentum.
+              </div>
+            </div>
+            <div class="specific-item col-xs-12 col-sm-3 col-md-3">
+              <div>
+                <a href=""
+                  ><img src="images/spec3.png" alt="" class="specific-img"
+                /></a>
+              </div>
+              <div class="specific-name">responsive display</div>
+              <div class="specific-description">
+                Nunc mattis lorem in leo lobortis, ut venenatis justo commodo.
+                Maecenas a justo nec velit egestas fermentum.
+              </div>
+            </div>
+            <div class="specific-item col-xs-12 col-sm-3 col-md-3">
+              <div>
+                <a href=""
+                  ><img src="images/spec4.png" alt="" class="specific-img"
+                /></a>
+              </div>
+              <div class="specific-name">24/7 support</div>
+              <div class="specific-description">
+                Nunc mattis lorem in leo lobortis, ut venenatis justo commodo.
+                Maecenas a justo nec velit egestas fermentum.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="block6">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+              <h2 class="title white">features.</h2>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+              <div class="features-wrapper">
+                <a href="#"
+                  ><img src="images/img7.png" alt="" class="img-item"
+                /></a>
+                <p class="features-name">Product Design: Eames Chairs</p>
+                <p class="features-description">
+                  Eames designs are certainly iconic. Everyone of us know at
+                  least two or three of their famous chairs. I would even risk
+                  saying that most of us dream about having a nice Eames.
+                </p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+              <div class="features-wrapper">
+                <a href="#"
+                  ><img src="images/img8.png" alt="" class="img-item"
+                /></a>
+                <p class="features-name">Elegant and Colorful Logos</p>
+                <p class="features-description">
+                  I’ve always found logo design to be one of the most
+                  challenging things to get right. There’s so much that a logo
+                  can say about a brand without actually saying it.
+                </p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+              <div class="features-wrapper">
+                <a href="#"
+                  ><img src="images/img9.png" alt="" class="img-item"
+                /></a>
+                <p class="features-name">A Showcase of Creative</p>
+                <p class="features-description">
+                  It’s always interesting to see another designer’s take on a
+                  famous website, app or even physical product. Different
+                  designers add their own personality and style.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="block7">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+              <h2 class="title">Stay in touch.</h2>
+            </div>
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.0762048401753!2d24.031113215128677!3d49.841025638969676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add6c441906d9%3A0x7e12bdf12456b1d2!2z0JzQsNC30L7RhS1jYWZl!5e0!3m2!1sru!2sua!4v1630256650747!5m2!1sru!2sua"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6">
+              <div>
+                <p class="contact-title">contact information</p>
+                <p class="contact-info">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  nisi metus, tristique nec dolor non, ornare sagittis dolor.
+                  Nulla vestibulum lacus sed molestie gravida.
+                </p>
+                <p class="contact-info">
+                  Cras fermentum elit quis magna congue, vel sodales arcu
+                  vestibulum. Nunc lobortis dui magna, quis dapibus lacus
+                </p>
+              </div>
+              <div class="contact-btn-center">
+                <button class="contact-btn">send massage</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-6">
-                    <div class="copyright white">
-                        <p>© Copyright 2014 by PSD Booster. All Rights Reserved.</p>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-6">
-                    <div class="contact-icons">
-                        <a href=""><img src="images/twitter.png" alt=""></a>
-                        <a href=""><img src="images/icon-facebook.png" alt=""></a>
-                        <a href=""><img src="images/icon-skype.png" alt=""></a>
-                        <a href=""><img src="images/behanse.png" alt=""></a>
-                        <a href=""><img src="images/icon-in.png" alt=""></a>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="copyright white">
+              <p>© Copyright 2014 by PSD Booster. All Rights Reserved.</p>
             </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="contact-icons">
+              <a href=""><img src="images/twitter.png" alt="" /></a>
+              <a href=""><img src="images/icon-facebook.png" alt="" /></a>
+              <a href=""><img src="images/icon-skype.png" alt="" /></a>
+              <a href=""><img src="images/behanse.png" alt="" /></a>
+              <a href=""><img src="images/icon-in.png" alt="" /></a>
+            </div>
+          </div>
         </div>
+      </div>
     </footer>
 
     <div class="modal">
-        <div class="modal-block">
-            <form action="">
-                <div class="btn-close">x</div>
-                <div class="form-field-flex">
-                    <div class="form-field">
-                        <p class="form-field-title">Your name</p>
-                        <input type="text">
-                    </div>
-                    <div class="form-field">
-                        <p class="form-field-title">Your email</p>
-                        <input type="email">
-                    </div>
-                </div>
-                <div class="form-field">
-                    <p class="form-field-title">Your message</p>
-                    <textarea></textarea>
-                </div>
-                <button class="btn-send-msg">Send Massage </button>
-            </form>
-        </div>
+      <div class="modal-block">
+        <form action="">
+          <div class="btn-close">x</div>
+          <div class="form-field-flex">
+            <div class="form-field">
+              <p class="form-field-title">Your name</p>
+              <input type="text" />
+            </div>
+            <div class="form-field">
+              <p class="form-field-title">Your email</p>
+              <input type="email" />
+            </div>
+          </div>
+          <div class="form-field">
+            <p class="form-field-title">Your message</p>
+            <textarea></textarea>
+          </div>
+          <button class="btn-send-msg">Send Massage</button>
+        </form>
+      </div>
     </div>
 
-    <script src="./script.js"></script>   
-    
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="./slick/slick.min.js"></script>
-<script type="text/javascript">
-    $(document).ready(function(){
-      $('.slider').slick({
-        dots: true,
-        fade: true,
-        arrows: false,
-        autoplay: true,
-        autoplaySpeed: 1500,
+    <script src="./script.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="./slick/slick.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".slider").slick({
+          dots: true,
+          fade: true,
+          arrows: false,
+          autoplay: false,
+          autoplaySpeed: 1500,
+        });
       });
-    });
-  </script>
-
-</body>
-
+    </script>
+  </body>
 </html>
